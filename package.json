@@ -16,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/alexander-ae/django-admin-3-front/issues"
   },
-  "homepage": "https://github.com/alexander-ae/django-admin-3-front#readme"
+  "homepage": "https://github.com/alexander-ae/django-admin-3-front#readme",
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "gulp-jade": "^1.1.0"
+  }
 }
