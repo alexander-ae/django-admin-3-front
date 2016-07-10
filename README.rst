@@ -7,3 +7,10 @@ Admin
 
 Instalacion
 ============
+
+Requiere de  [Node.js](https://nodejs.org/) v4+ .
+
+
+```sh
+$ npm install
+```
