@@ -1,7 +1,7 @@
 {
   "name": "django-admin-3-front",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend para Admin Django",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/alexander-ae/django-admin-3-front.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "daniel y alexander",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alexander-ae/django-admin-3-front/issues"
@@ -23,7 +23,9 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-connect": "^4.1.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-stylus": "^2.5.0",
+    "nib": "^1.1.0"
   },
   "dependencies": {
     "gulp-jade": "^1.1.0"
