@@ -8,9 +8,14 @@ Admin
 Instalacion
 ============
 
-Requiere de  [Node.js](https://nodejs.org/) v4+ .
+Requiere de  `Node.js <https://nodejs.org/>`_ v4+
 
+dependencias::
 
-```sh
-$ npm install
-```
+    $ npm install
+
+Run
+============
+::
+
+    $ gulp
