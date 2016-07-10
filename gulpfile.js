@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp'),
-  jade = require('gulp-jade'),
+  pug = require('gulp-pug'),
   stylus = require('gulp-stylus'),
   nib = require('nib'),
   connect = require('gulp-connect'),
@@ -11,7 +11,7 @@ const gulp = require('gulp'),
 
 // Rutas de las carpetas
 const path = {
-  jade: "src/templates/jade/**/*.jade",
+  pug: "src/templates/pug/**/*.pug",
   html: 'src/templates/html',
   stylus_block: 'src/static/stylus/block/*.styl',
   stylus_themes: 'src/static/stylus/themes/*.styl',
@@ -19,18 +19,19 @@ const path = {
   stylus_pages: 'src/static/stylus/pages/*.styl',
   stylus: 'src/static/stylus/*.styl',
   css: 'src/static/css',
-  css_block: 'src/static/css/themes',
-  css_block: 'src/static/css/pages',
-  css_block: 'src/static/css/base',
+  css_themes: 'src/static/css/themes',
+  css_pages: 'src/static/css/pages',
+  css_base: 'src/static/css/base',
+  css_block: 'src/static/css/block',
 }
 
-// Compilando Jade a html
+// Compilando pug a html
 
-gulp.task('jade', () => {
+gulp.task('pug', () => {
 
-  return gulp.src(path.jade)
+  return gulp.src(path.pug)
     .pipe(plumber())
-    .pipe(jade({
+    .pipe(pug({
       pretty: true
       }))
     .pipe(gulp.dest(path.html))
@@ -97,7 +98,7 @@ gulp.task('stylus_base', () => {
 
 // funcion donde observara gulp
 gulp.task('watch', () => {
-  gulp.watch(path.jade, ['jade'])
+  gulp.watch(path.pug, ['pug'])
   gulp.watch(path.stylus, ['stylus'])
   gulp.watch(path.stylus, ['stylus_block'])
   gulp.watch(path.stylus, ['stylus_themes'])
@@ -123,4 +124,4 @@ gulp.task('connect', () => {
 // Ejecutando gulp
 
 // por Default
-gulp.task('default', ['jade', 'watch', 'connect', 'stylus', 'stylus_block', 'stylus_themes', 'stylus_base', 'stylus_pages']);
+gulp.task('default', ['pug', 'watch', 'connect', 'stylus', 'stylus_block', 'stylus_themes', 'stylus_base', 'stylus_pages']);
