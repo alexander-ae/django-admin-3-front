@@ -57,37 +57,6 @@ gulp.task('stylus_blocks', () => {
 });
 
 
-// gulp.task('stylus_pages', () => {
-//   return gulp.src(path.stylus_pages)
-//     .pipe(plumber())
-//     .pipe(stylus({
-//       use: nib()
-//     }))
-//     .pipe(gulp.dest(path.css_pages))
-//     .pipe(connect.reload())
-// });
-
-
-// gulp.task('stylus_themes', () => {
-//   return gulp.src(path.stylus_themes)
-//     .pipe(plumber())
-//     .pipe(stylus({
-//       use: nib()
-//     }))
-//     .pipe(gulp.dest(path.css_themes))
-//     .pipe(connect.reload())
-// });
-
-// gulp.task('stylus_base', () => {
-//   return gulp.src(path.stylus_base)
-//     .pipe(plumber())
-//     .pipe(stylus({
-//       use: nib()
-//     }))
-//     .pipe(gulp.dest(path.css_base))
-//     .pipe(connect.reload())
-// });
-
 
 // funcion donde observara gulp
 gulp.task('watch', () => {
