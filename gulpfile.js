@@ -62,7 +62,7 @@ gulp.task('stylus_blocks', () => {
 gulp.task('watch', () => {
   gulp.watch(path.pug, ['pug'])
   gulp.watch(path.stylus, ['stylus'])
-  gulp.watch(path.stylus, ['stylus_blocks'])
+  gulp.watch(path.stylus_blocks, ['stylus_blocks'])
 
 });
 

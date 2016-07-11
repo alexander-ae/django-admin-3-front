@@ -1,0 +1,7 @@
+@import "variables.styl"
+
+
+for key, value in device
+  @media only screen and (min-width : value)
+    .css
+        min-width value
