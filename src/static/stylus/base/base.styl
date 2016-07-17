@@ -1,0 +1,30 @@
+@import '../core/variables.styl'
+@import './sidebar.styl'
+
+// header
+
+header
+    .container-all
+        h2
+            color: colors.default
+
+
+.main
+    .container-all
+        background: colors.white
+    #docs
+        h2
+            border-bottom: 1px solid colors.success
+        .docs
+            &__item
+                margin-left 20px
+                margin-bottom 20px
+                .docs__description
+                    margin-top 10px
+                    .docs__example
+                        background: colors.success
+                        margin-top 20px
+                        .docs__col
+                            background: colors.primary
+                            color: colors.white
+                            padding 10px
