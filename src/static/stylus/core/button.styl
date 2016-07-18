@@ -21,6 +21,17 @@ for key, value in colors
         &:hover
             background: darken(value, 20%)
 
+for key, value in colors
+    .btn-{key}-light
+        color: value
+        background transparent
+        border: 2px solid darken(value, 20%)
+        transition .2s ease all
+        &:hover
+            color: colors.white
+            background: darken(value, 20%)
+
+
 .button-group
     display flex
     flex-wrap wrap
@@ -29,7 +40,7 @@ for key, value in colors
         border none !important
     .btn:first-child
         border-top-left-radius 6px !important
-        border-top-left-radius 6px !important
+        border-bottom-left-radius 6px !important
         border none !important
     .btn:last-child
         border-top-right-radius 6px !important
